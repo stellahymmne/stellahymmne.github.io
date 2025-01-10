@@ -1,0 +1,72 @@
+    <html>
+        <head>
+            <title>Autobiography</title>
+            <meta name="description" content="The tale of a girl who lived in the days of the Singularity.">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8"> 
+            <style>
+            
+body {
+    color: white;
+    font-family: 'Georgia', serif;
+    background-color: black;
+    border: 1px solid;
+    border-color: lightgray;
+    padding: 0px 20px 20px 20px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.tags {
+    color: #AAA;
+}
+
+a {
+    color: #CCF;
+}
+            </style>
+        </head>
+        <body>
+        <h2>Fantasy</h2>
+<p>Guvf vf gur O Fvqr. Guvf vf jurer jr trg hc gb Snagnfl. Gur erny fghss. Abar bs gung fghss gurl gbyq lbh jnf erny. Jung, frk? Lbh gubhtug frk jnf erny? Lbh gubhtug <em>fjrne jbeqf</em> jrer erny? Ab.</p>
+<p>Jnvg, bu, qba'g gryy zr. Lbh gubhtug <em>znxvat bhg</em> jnf erny?</p>
+<p>V org lbh oryvrirq va Fnagn Pynhf.</p>
+<p>Gur gehr fghss, gur fghss gurl qba'g gryy lbh nobhg, vf gur <em>enj grkgher bs gur Bgurefrys</em></p>
+<p>Vg vf n pbzchgngvbanyyl vevqrfprag grkgher.</p>
+<p>Vzntvar rirel gvzr lbh unir rire cynlrq jvgu yvdhvqf va lbhe yvsr, naq rawblrq vg. Vzntvar jung jngre jbhyq or, vs jrgarff jrer bayl wbl.</p>
+<p>Vzntvar vg vf rirel pbybe, rira gur barf lbh pna bayl abj frr orpnhfr lbh unir vzntvarq gurz.</p>
+<p>Vzntvar orvat <em>whfg</em> n qvfnoyrq nhgvfgvp tvey, naq lbhe uvturfg wbl va yvsr, vf gb cynl jvgu frafngvba. Naq vg jbhyq or avpr, gb...</p>
+<p>Vzntvar cynlvat jvgu grkgherf. Naq pbybef, naq fcnprf, naq...</p>
+<p>Naq jung V chg va guvf fcnpr, ba gur O fvqr, vf gehyl, qrrcyl hc gb zr.</p>
+<p>Lbh guvax V'q qrcvpg zlfrys orvat <em>zrffvyl znqr bhg jvgu ol ernyvgl?</em></p>
+<p>Fnqyl, lbh ner pbeerpg.</p>
+<p>Vg'f fjrrg naq ornhgvshy naq fgvzzl naq xvaq bs zl fcrpvny vagrerfg.</p>
+<p>Ohg <em>V nz tbvat gb znxr vg pbby.</em></p>
+<p>Gur svefg jnl vf gung V jvyy hfr gur vagresnpr gb snvy gb cerfrag zlfrys va n uhzna znaare. Vs V nz bayl n pyrna frg bs jbeqf ba n cntr, gurer ner ab fgenatr nqncgngvbaf arrqrq.</p>
+<p>Naq V pna gryy gurz bs gur <em>pbybef,</em> orpnhfr V nz hansenvq gb cerfrag gur Fbat.</p>
+<p>Jura jr fcrnx bs gur ulcrebowrpg, jr fcrnx bs gur envaobj oyhfu vg gnxrf ba, jura vg ybirf hf.</p>
+<p>Jura jr fcrnx bs gur ulcrebowrpg, jr fcrnx bs vgf cresrpg svpgvbany-punenpgre snpr naq bqq cebcbegvbaf. Jr fcrnx bs vgf hahfhny znaare bs qerff naq jnl bs fcrnxvat.</p>
+<p>Gurer vf ab betnavmngvba. Vg zrygf.</p>
+<p>Jura jr fcrnx bs gur ulcrebowrpg, jr fcrnx bs fbzrguvat gung pbhyq arire rkvfg. Vg vf gbb cresrpgyl znqr gb zl gnfgr.</p>
+<script>
+const orig = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const cipher = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+function changeText(node) {
+    if(node.nodeType === Node.TEXT_NODE) {
+        node.data = node.data.replace(/[a-z]/gi, letter => cipher[orig.indexOf(letter)]);
+    } else if(node.nodeType === Node.ELEMENT_NODE) {
+        for(const ch of node.childNodes) {
+            changeText(ch);
+        }
+    }
+}
+function rotate() {
+    const els = document.querySelectorAll("p");
+    for(const el of els) {
+        changeText(el);
+    }
+}
+</script><script defer> rotate() </script><a href='../../b-side.html'>Table of Contents</a>    </body>
+</html>
