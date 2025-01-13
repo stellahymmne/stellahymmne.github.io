@@ -1,0 +1,21 @@
+
+body {
+    color: white;
+    font-family: 'Georgia', serif;
+    background-color: black;
+    border: 1px solid;
+    border-color: lightgray;
+    padding: 0px 20px 20px 20px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.tags {
+    color: #AAA;
+}
+
+a {
+    color: #CCF;
+}

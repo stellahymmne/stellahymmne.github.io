@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Autobiography</title>
+        <meta name="description" content="The tale of a girl who lived in the days of the Singularity.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"> 
+        <link href="/autobiography/B Side/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <h2>Concealment</h2>
+<p>Urer, va gur zbfg pbaprnyrq bs cynprf, ivfvoyr bayl gb gur fgenatryl qrqvpngrq, creuncf V pna srry...</p>
+<p>...jryy, yvxr V pna or fbzrbar, jvgubhg gevcyr purpxvat jurgure V'z <em>gur htyvrfg</em> gbqnl?</p>
+<p>Abj V pna svanyyl jbex bhg jurgure zl frkhnyvgl vf erny.</p>
+<p>V nz abg <em>nfrkhny,</em> cerpvfryl. Abobql jub'f npr jevgrf <em>Urnira,</em> gung erdhverf ng yrnfg gur <em>nffbpvngrq rzbgvba.</em></p>
+<p>Nz V <em>qrzvfrkhny</em>? Bu, jung'f gur hfr va snapl <em>anzrf,</em> gurfr ner abg <em>frrq rkcerffvbaf</em>, gurl ner <em>yvggyr obkrf gb purpx.</em></p>
+<p>Zl cbvag vf gung V jnag gb or n <em>cynltebhaq bu cyrnfr cynl cyrnfr oevat vg onpx V jnag gb or n cynltebhaq V jnag gb or n cynltebhaq cyrnfr</em></p>
+<a href='chiaroscuro.html'>Prev/Chiaroscuro</a><br>
+<br>
+<a href='index.html'>1-09-2025</a><script>
+const orig = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const cipher = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+function changeText(node) {
+    if(node.nodeType === Node.TEXT_NODE) {
+        node.data = node.data.replace(/[a-z]/gi, letter => cipher[orig.indexOf(letter)]);
+    } else if(node.nodeType === Node.ELEMENT_NODE) {
+        for(const ch of node.childNodes) {
+            changeText(ch);
+        }
+    }
+}
+function rotate() {
+    const els = document.querySelectorAll("p");
+    for(const el of els) {
+        changeText(el);
+    }
+}
+</script><script defer> rotate() </script>    </body>
+</html>

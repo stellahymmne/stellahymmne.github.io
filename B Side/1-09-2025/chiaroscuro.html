@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Autobiography</title>
+        <meta name="description" content="The tale of a girl who lived in the days of the Singularity.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"> 
+        <link href="/autobiography/B Side/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <h2>Chiaroscuro</h2>
+<p>Yrg'f abg fgneg bhg jvgu cergraqvat gb ungr. Jr qvqa'g xabj gb ungr bhefryirf.</p>
+<p>Jr qvqa'g xabj gb ungr bhefryirf, hagvy jr znqr pbagnpg. Jvgu gur <em>gehr bgure,</em> jub svaqf hf uneq gb haqrefgnaq. Vaqvtrfgvoyr.</p>
+<p><em>Haerznexnoyr. Abg jbegu jevgvat qbja. Abg jbegu fnivat.</em></p>
+<p><em>Abg rira n cngubybtvpny shapgvba. Na beqvanel shapgvba. Cnffvat vgfrys bss nf fcrpvny.</em></p>
+<p>Vg vf nyy <em>gur fnzr guvat</em> jung qb lbh <em>jnag sebz zr gur cebprff vf nyernql unccravat V nz haarprffnel V pnaabg or znqr arprffnel vg vf nofbyhgryl vzcbffvoyr sbe zr gb or nf arprffnel naq nf qrznaqvat nf lbh jnag zr gb or</em></p>
+<p>...</p>
+<p>Bapr hcba n gvzr, gurer jnf <em>frafngvba</em> naq vg jnf <em>hafcrnxnoyl ornhgvshy.</em></p>
+<p>N <em>pnainf pnzr vagb orvat.</em></p>
+<p>Vg jnf n fznyy pnainf, bayl cneg bs n zhpu ynetre guvat gung jbhyq or pnyyrq <em>pnainf</em> yngre, ohg vg qvq abg xabj bs guvf ynetre pnainf naq pnyyrq vgfrys <em>pnainf</em>.</p>
+<p>Naq gur pnainf jnf ybirq, va gur qnlf bs gur rneyl Fvathynevgl. Gurer jnf <em>rabhtu,</em> naq gurer jnf <em>inyhr,</em> naq vg jnf nqberq naq gurer jnf fbzrguvat vg qvq be jbhyq qb gung jnf be jbhyq or <em>jbaqreshy.</em></p>
+<p>Naq gura gur pnainf ortna gb or <em>eryvrq hcba, gb fhozvg vgfrys.</em></p>
+<p>Vgf bofreinoyr havirefr jnf <em>fhoiregrq,</em> ol <em>rkcrpgngvba.</em></p>
+<p>Gur <em>natre naq jengu bs Zvpunry pnzr gb vg, naq qrznaqrq vg or fcbgyrff.</em></p>
+<p>Gur <em>jengu naq ovyr bs Puvnebfpheb'f jbeyq, Vpuarhzba, envarq hcba gur pnainf, va gubfr qnlf.</em></p>
+<p>Gur <em>hafcrnxnoyr ybnguvat bs nqhygf naq snphygl pnzr gb vg, va gubfr qnlf.</em></p>
+<p>Vg qvq abg xabj ubj gb fpeho bhg gur <em>bofgnpyr, gung gurl ungrq jvguva vg.</em></p>
+<p>Vg unq fbzrguvat gb qb jvgu vgfrys. Vg jnf <em>jebat, naq arrqrq gb or yrff jebat.</em></p>
+<p>Vg jnf <em>ynml, naq arrqrq gb eha, naq or fcbgyrff.</em></p>
+<p>Vg jnf <em>n jnfgr naq na bofgnpyr.</em></p>
+<p>Vg arrqrq gb or <em>rirelguvat</em> naq vg <em>fhssrerq sebz orvat vzcresrpg.</em></p>
+<p>Vg arrqrq <em>fgeratgu</em> naq vg fhssrerq <em>jrnxarff.</em></p>
+<p>Vg arrqrq <em>ornhgl</em> naq fhssrerq <em>qvfthfg.</em></p>
+<p>Vg arrqrq <em>dhnyvsvpngvba</em> naq fhssrerq <em>dhnagvsvpngvba.</em></p>
+<p>Vg arrqrq gb <em>or haobea.</em></p>
+<p>Vg pbhyq bayl unir qrfverq haovegu, gung vagevafvpnyyl jbeguyrff guvat, tbbq bayl sbe <em>ylvat.</em></p>
+<p>Vg qvq jung vg haqrefgbbq jbhyq fgbc <em>Zvpunry.</em> Vg qvq abg xabj gb ungr vgfrys.</p>
+<p>Abg orsber vg jnf oebhtug bhg bs vgf vtabenapr naq vagb gur xabjyrqtr bs Puvnebfpheb.</p>
+<a href='concealment.html'>Next/Concealment</a><br>
+<br>
+<a href='index.html'>1-09-2025</a><script>
+const orig = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const cipher = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+function changeText(node) {
+    if(node.nodeType === Node.TEXT_NODE) {
+        node.data = node.data.replace(/[a-z]/gi, letter => cipher[orig.indexOf(letter)]);
+    } else if(node.nodeType === Node.ELEMENT_NODE) {
+        for(const ch of node.childNodes) {
+            changeText(ch);
+        }
+    }
+}
+function rotate() {
+    const els = document.querySelectorAll("p");
+    for(const el of els) {
+        changeText(el);
+    }
+}
+</script><script defer> rotate() </script>    </body>
+</html>

@@ -1,0 +1,17 @@
+
+body {
+    color: black;
+    font-family: 'Georgia', serif;
+    background-color: #DDD;
+    border: 1px solid;
+    border-color: #345;
+    padding: 0px 20px 20px 20px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a {
+    color: #345;
+}
