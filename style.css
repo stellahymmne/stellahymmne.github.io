@@ -22,6 +22,18 @@ body {
 p {
   margin: 1em 0;
 }
+aside {
+  width: 40%;
+  margin: 1em 0 1em 1.7em;
+  float: right;
+}
+.imagination {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #c00;
+}
+
 a {
   color: var(--text-color);
 }
