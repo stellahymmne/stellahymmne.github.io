@@ -52,15 +52,6 @@ a:visited {
   color: var(--link-color);
 }
 
-
-
-img {
-  max-width: 100%;
-}
-svg {
-  height: auto;
-  max-width: 100%;
-}
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1.4em;
 }
@@ -99,10 +90,6 @@ pre code {
   overflow: visible;
   overflow-wrap: normal;
 }
-.sourceCode {
- background-color: transparent;
- overflow: visible;
-}
 hr {
   background-color: var(--text-color);
   border: none;
@@ -136,30 +123,3 @@ header {
   margin-bottom: 4em;
   text-align: center;
 }
-#TOC li {
-  list-style: none;
-}
-#TOC ul {
-  padding-left: 1.3em;
-}
-#TOC > ul {
-  padding-left: 0;
-}
-#TOC a:not(:hover) {
-  text-decoration: none;
-}
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-/* The extra [class] is a hack that increases specificity enough to
-   override a similar rule in reveal.js */
-ul.task-list[class]{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  font-size: inherit;
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
