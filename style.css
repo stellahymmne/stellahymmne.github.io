@@ -5,6 +5,20 @@ html {
   color: var(--text-color);
   background-color: var(--bg-color);
 }
+@font-face {
+    font-family: 'over_the_rainbowregular';
+    src: url('fonts/OTR/overtherainbow-regular-webfont.woff2') format('woff2'),
+         url('fonts/OTR/overtherainbow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mansalvaregular';
+    src: url('fonts/Mansalva/mansalva-regular-webfont.woff2') format('woff2'),
+         url('fonts/Mansalva/mansalva-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   margin: 0 auto;
   max-width: 36em;
@@ -13,10 +27,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   hyphens: auto;
-  overflow-wrap: break-word;
-  text-rendering: optimizeLegibility;
-  font-kerning: normal;
-  font-family: serif;
+  font-family: 'mansalvaregular', serif;
   font-size: 1.2em;
 }
 p {
@@ -27,19 +38,12 @@ aside {
   margin: 1em 0 1em 1.7em;
   float: right;
 }
-
-dt.imagination {
-  font-weight: normal;
-  font-style: normal;
-  color: #000;
-}
-
 dt {
   font-weight: 600;
 }
 
 .imagination {
-  font-family: cursive;
+  font-family: 'over_the_rainbowregular', cursive;
   font-size: 90%;
   line-height: 115%;
   color: #c00;
