@@ -16,7 +16,7 @@ body {
   overflow-wrap: break-word;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
-  font-family: 'Mansalva', serif;
+  font-family: serif;
   font-size: 1.2em;
 }
 p {
@@ -27,10 +27,21 @@ aside {
   margin: 1em 0 1em 1.7em;
   float: right;
 }
+
+dt.imagination {
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
+}
+
+dt {
+  font-weight: 600;
+}
+
 .imagination {
-  font-family: 'Over the Rainbow', cursive;
-  font-size: 0.9em;
-  font-weight: 500;
+  font-family: cursive;
+  font-size: 90%;
+  line-height: 115%;
   color: #c00;
 }
 
@@ -40,6 +51,9 @@ a {
 a:visited {
   color: var(--link-color);
 }
+
+
+
 img {
   max-width: 100%;
 }
