@@ -26,7 +26,7 @@ body {
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
-  hyphens: auto;
+  hyphens: none;
   font-family: 'mansalvaregular', serif;
   font-size: 1.2em;
 }
@@ -44,9 +44,14 @@ dt {
 
 .imagination {
   font-family: 'over_the_rainbowregular', cursive;
+  font-style: italic;
   font-size: 90%;
   line-height: 115%;
   color: #c00;
+}
+
+.imagination em {
+  font-weight: bold;
 }
 
 a {
