@@ -52,6 +52,11 @@ dt {
 
 .imagination em {
   font-weight: bold;
+  white-space: nowrap;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 a {
