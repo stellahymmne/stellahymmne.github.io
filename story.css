@@ -46,12 +46,10 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 12pt;
-  line-height: 12pt;
   margin: 0 auto;
 }
 h1 {
   font-size: 24pt;
-  line-height: 24pt;
 }
 h2 {
   font-size: 14pt;
@@ -76,24 +74,33 @@ em {
   font-style: italic;
   color: var(--em-color);
 }
-ins {
+.red {
+  line-height: 14pt;
   font-family: var(--redactor-font);
   vertical-align: -1.5pt;
   color: var(--red-color);
   font-style: italic;
-  text-decoration: none;
+  font-weight: normal;
 }
-ins b {
+.red strong {
+  font-family: var(--redactor-font);
+  vertical-align: -1.5pt;
+  font-size: 1.5em;
+  color: var(--red-color);
+  font-style: italic;
+  font-weight: bold;
+}
+.red b {
   font-family: var(--redactor-font);
   color: var(--red-color);
 }
-ins em {
+.red em {
   color: var(--red-color);
   font-family: var(--redactor-font);
   font-style: italic;
 }
 aside {
-  width: 12em;
+  width: 14em;
   text-align: right;
   float: right;
 }
