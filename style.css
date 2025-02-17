@@ -1,52 +1,44 @@
 html {
   --text-color: #013;
-  --link-color: #413;
-  --bg-color: #fef;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background-color: #fef;
 }
 @font-face {
-    font-family: 'over_the_rainbowregular';
+    font-family: 'Over the Rainbow';
     src: url('fonts/OTR/overtherainbow-regular-webfont.woff2') format('woff2'),
          url('fonts/OTR/overtherainbow-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'mansalvaregular';
+    font-family: 'Mansalva';
     src: url('fonts/Mansalva/mansalva-regular-webfont.woff2') format('woff2'),
          url('fonts/Mansalva/mansalva-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'srisakdiregular';
-    src: url('fonts/Srisakdi/srisakdi-regular-webfont.woff2') format('woff2'),
-         url('fonts/Srisakdi/srisakdi-regular-webfont.woff') format('woff');
+    font-family: 'Courier Prime';
+    src: url('fonts/CourierPrime/courierprime-italic-webfont.woff2') format('woff2'),
+         url('fonts/CourierPrime/courierprime-italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 @font-face {
-    font-family: 'courierprimeregular';
-    src: url('fonts/CourierPrime/courierprime-regular-webfont.woff2') format('woff2'),
-         url('fonts/CourierPrime/courierprime-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'courierprimebold';
+    font-family: 'Courier Prime';
     src: url('fonts/CourierPrime/courierprime-bold-webfont.woff2') format('woff2'),
          url('fonts/CourierPrime/courierprime-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
-    font-family: 'courierprimeitalic';
-    src: url('fonts/CourierPrime/courierprime-italic-webfont.woff2') format('woff2'),
-         url('fonts/CourierPrime/courierprime-italic-webfont.woff') format('woff');
+    font-family: 'Courier Prime';
+    src: url('fonts/CourierPrime/courierprime-regular-webfont.woff2') format('woff2'),
+         url('fonts/CourierPrime/courierprime-regular-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
+
 body {
   margin: 0 auto;
   max-width: 36em;
@@ -55,8 +47,8 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   hyphens: none;
-  font-family: 'mansalvaregular', sans;
-  font-size: 1.2em;
+  font-family: 'Mansalva', sans;
+  font-size: 14pt;
 }
 p {
   margin: 1em 0;
@@ -70,17 +62,23 @@ dt {
   font-weight: 600;
 }
 
-.imagination {
-  font-family: 'over_the_rainbowregular', cursive;
+.imagination, .emagination em {
+  font-family: 'Over the Rainbow', cursive;
   font-style: italic;
   font-size: 90%;
   line-height: 115%;
   color: #c00;
 }
 
-.imagination em {
+.imagination em, .emagination b {
   font-weight: bold;
   white-space: nowrap;
+}
+
+.typed {
+  font-family: 'Courier Prime Bold', monospace;
+  font-size: 12pt;
+  font-weight: bold;
 }
 
 .nowrap {
@@ -91,7 +89,7 @@ a {
   color: var(--text-color);
 }
 a:visited {
-  color: var(--link-color);
+  color: #413;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,7 +116,7 @@ blockquote {
   color: #666;
 }
 code {
-  font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+  font-family: 'Courier Prime', Menlo, Monaco, Consolas, 'Lucida Console', monospace;
   font-size: 85%;
   margin: 0;
   hyphens: manual;

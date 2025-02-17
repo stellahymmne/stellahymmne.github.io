@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Courier Prime Italic';
+    src: url('fonts/CourierPrime/courierprime-italic-webfont.woff2') format('woff2'),
+         url('fonts/CourierPrime/courierprime-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Courier Prime Bold';
+    src: url('fonts/CourierPrime/courierprime-bold-webfont.woff2') format('woff2'),
+         url('fonts/CourierPrime/courierprime-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('fonts/CourierPrime/courierprime-regular-webfont.woff2') format('woff2'),
+         url('fonts/CourierPrime/courierprime-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Over the Rainbow';
+    src: url('fonts/OTR/overtherainbow-regular-webfont.woff2') format('woff2'),
+         url('fonts/OTR/overtherainbow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+  background-color: #000;
+  --text-color: #EEE;
+  --h-color: #DBD;
+  --em-color: #DBD;
+  --red-color: #F66;
+  --mono-font: 'Courier New', 'Courier', 'Monaco', 'Consolas', monospace;
+  --italic-font: 'Courier New', 'Courier', 'Monaco', 'Consolas', monospace;
+  --bold-font: 'Courier New', 'Courier', 'Monaco', 'Consolas', monospace;
+  --redactor-font: 'Over the Rainbow', cursive;
+  --font-size: 12pt;
+  
+}
+body {
+  color: var(--text-color);
+  font-family: var(--mono-font);
+  letter-spacing: -0.8pt;
+  max-width: 42em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: var(--font-size);
+  line-height: 12pt;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 24pt;
+}
+h2 {
+  font-size: 14pt;
+  text-align: center;
+}
+b, strong, h1, h2 {
+  font-family: var(--bold-font);
+  color: var(--h-color);
+}
+i {
+  font-family: var(--italic-font);
+  font-style: italic;
+}
+em {
+  font-family: var(--italic-font);
+  font-style: italic;
+  color: var(--em-color);
+}
+ins {
+  font-family: var(--redactor-font);
+  vertical-align: -1.5pt;
+  color: #F66;
+  font-style: italic;
+  text-decoration: none;
+}
+ins b {
+  font-family: var(--redactor-font);
+  color: #F66;
+}
+ins em {
+  color: #F66;
+  font-family: var(--redactor-font);
+  font-style: italic;
+}
+aside {
+  width: 12em;
+  text-align: right;
+  --margin: 1.5em 0em 1.5em 1.5em;
+  float: right;
+}
+.right { text-align: right }
+.center { text-align: center }
