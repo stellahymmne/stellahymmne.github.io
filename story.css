@@ -29,15 +29,12 @@
 html {
   background-color: #000;
   --text-color: #EEE;
-  --h-color: #DBD;
   --em-color: #DBD;
   --red-color: #F66;
   --mono-font: 'Courier New', 'Courier', 'Monaco', 'Consolas', monospace;
   --italic-font: 'Courier New', 'Courier', 'Monaco', 'Consolas', monospace;
   --bold-font: 'Courier New', 'Courier', 'Monaco', 'Consolas', monospace;
   --redactor-font: 'Over the Rainbow', cursive;
-  --font-size: 12pt;
-  
 }
 body {
   color: var(--text-color);
@@ -48,7 +45,7 @@ body {
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
-  font-size: var(--font-size);
+  font-size: 12pt;
   line-height: 12pt;
   margin: 0 auto;
 }
@@ -59,9 +56,15 @@ h2 {
   font-size: 14pt;
   text-align: center;
 }
-b, strong, h1, h2 {
+a {
+  color: var(--em-color);
+}
+a:visited {
+  color: #AAD;
+}
+b, strong, h1, h2, dt {
   font-family: var(--bold-font);
-  color: var(--h-color);
+  color: var(--em-color);
 }
 i {
   font-family: var(--italic-font);
@@ -75,23 +78,22 @@ em {
 ins {
   font-family: var(--redactor-font);
   vertical-align: -1.5pt;
-  color: #F66;
+  color: var(--red-color);
   font-style: italic;
   text-decoration: none;
 }
 ins b {
   font-family: var(--redactor-font);
-  color: #F66;
+  color: var(--red-color);
 }
 ins em {
-  color: #F66;
+  color: var(--red-color);
   font-family: var(--redactor-font);
   font-style: italic;
 }
 aside {
   width: 12em;
   text-align: right;
-  --margin: 1.5em 0em 1.5em 1.5em;
   float: right;
 }
 .right { text-align: right }
