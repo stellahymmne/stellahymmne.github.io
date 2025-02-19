@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Over the Rainbow';
+    src: url('fonts/OTR/overtherainbow-regular-webfont.woff2') format('woff2'),
+         url('fonts/OTR/overtherainbow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mansalva';
+    src: url('fonts/Mansalva/mansalva-regular-webfont.woff2') format('woff2'),
+         url('fonts/Mansalva/mansalva-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { background-color: #FEF }
+body {
+  font-family: 'Mansalva', cursive;
+  color: #000;
+  font-size: 12pt;
+  color: #000;
+  max-width: 48em;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header {
+  text-align: center;
+  font-weight: bold;
+}
+h1 { font-size: 28pt }
+h2, h3 { font-weight: bold }
+h2 { font-size: 14pt }
+h3 { font-size: 12pt }
+a { color: #b02 }
+a:visited { color: #402 }
+em { font-weight: bold }
+.ink {
+  font-family: 'Mansalva', cursive;
+  color: #000;
+}
+.red, .dtat {
+  font-family: 'Over the Rainbow';
+  color: #c00;
+  font-style: italic;
+  line-height: 12pt;
+  vertical-align: -1.5pt;
+}
+.red em, .red dt {
+  font-weight: bold;
+}
+.red strong {
+  font-size: 1.4em;
+}
+.dtat {
+  position: relative;
+  top: 1.5em;
+}
+
+aside {
+  width: 15em;
+  float: right;
+  margin-left: 1em;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+.dark { background-color: #000 }
+.dark body, .key {
+  font-family: 'Courier New', 'Courier', 'Menlo', 'Monaco', monospace;
+  font-size: 12pt;
+}
+.dark body {
+  color: #EEE;
+}
+.dark em, .dark strong, .dark h1, .dark h2, .dark dt, .dark a {
+  color: #DBD;
+}
+.dark .red {
+  color: #F66;
+}
+.dark .red em, .dark .red strong {
+  color: #F66;
+}
+.dark a:visited { color: #AAD }
+
+.cc0 {
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+.dark .cc0 {
+  color: #EEE;
+}
+.cc0 img {
+  height:14px;
+  margin-left:3px;
+  vertical-align:text-bottom;
+}
+.cc0 a {
+  display:inline-block;
+  text-decoration: none;
+}
