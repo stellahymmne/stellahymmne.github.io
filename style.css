@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Over the Rainbow';
+  src: url('fonts/OTR/overtherainbow-regular-webfont.woff2') format('woff2'),
+       url('fonts/OTR/overtherainbow-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --txt: light-dark(#111,#eee);
+  --em-txt: light-dark(#a63, #fc9);
+  --red-txt: light-dark(#a00, #c00);
+  --link-txt: var(--em-txt);
+  --visit-txt: var(--txt);
+}
+html {
+  background-color: light-dark(#eee, #000);
+  color-scheme: dark light;
+}
+html.oldstyle {
+  background-color: light-dark(#ede, #001);
+  --txt: light-dark(#112, #eee);
+  --em-txt: light-dark(#000, #cac);
+  color-scheme: light dark;
+}
+html.redstyle {
+   background-color: light-dark(#eee, #000);
+  --txt: light-dark(#a00, #c00);
+  --em-txt: light-dark(#c00, #f00);
+}
+body {
+  color: var(--txt);
+  text-align: justify;
+  max-width: 48em;
+  margin: 2em auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid var(--em-txt);
+}
+.oldstyle body {
+  font-family: 'Georgia', serif;
+  text-align: left;
+}
+.oldstyle b, .oldstyle dt, .oldstyle h1, .oldstyle h2 {
+  font-family: 'Mansalva', cursive;
+}
+.redstyle body {
+  font-family: 'Baskerville', 'Georgia', serif;
+  font-variant: small-caps;
+  font-size: 12pt;
+  text-align: left;
+}
+.redstyle b, .redstyle dt, .redstyle h1, .redstyle h2 {
+  font-family: 'Over the Rainbow', cursive;
+  color: var(--em-txt);
+}
+b, dt {
+  color: var(--em-txt);
+  font-variant: small-caps;
+  font-weight: bold;
+}
+dd {
+  text-align: left;
+}
+h1 { 
+  margin-top: 0;
+}
+h2, b {
+  font-size: 110%;
+}
+.series, h1 {
+  color: var(--em-txt);
+  font-variant: small-caps;
+}
+.series {
+  font-size: 130%;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.title {
+  margin-bottom: 0;
+}
+.red {
+  color: var(--red-txt);
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 13pt;
+  line-height: 13pt;
+}
+.ink {
+  color: var(--em-txt);
+  font-family: 'Mansalva', cursive;
+  font-size: 13pt;
+  line-height: 13pt;
+}
+.typed {
+  font-family: 'Courier New', monospace;
+}
+.red em {
+  font-size: 110%;
+}
+a { color: var(--link-txt) }
+a:visited { color: var(--visit-txt) }
+aside {
+  width: 11em;
+  margin-left: 0.5em;
+  float: right;
+  text-align: right;
+}
+footer {
+  text-align: center;
+  font-weight: bold;
+  color: var(--em-txt);
+  font-variant: small-caps;
+}
+.otherside {
+  width: 35em;
+}
+.small {
+  font-size: 90%;
+}
+.big {
+  font-size: 110%;
+}
+.note { 
+  color: var(--em-txt);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 60%;
+}
+#footnotes {
+  text-align: left;
+  font-size: 80%;
+}
+li::marker {
+  font-weight: bold;
+  color: var(--em-txt);
+}
